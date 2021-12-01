@@ -1,5 +1,16 @@
+<html>
+ <header>
+      <h1 class="heading">
+        Title
+      </h1>
+      </header>
+
+<body>
 <div class="text-center">
 
 <h1>練習用</h1>
+文字のテスト
 
 </div>
+</body>
+</html>
