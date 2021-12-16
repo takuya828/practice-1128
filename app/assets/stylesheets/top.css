@@ -7,3 +7,15 @@
     font-size: 40;
     font-family: Impact;
 }
+
+.futoji {
+  font-weight: bold;
+}
+
+.color {
+  background-color: #faa;
+}
+
+body {
+  background-color: #CCFFCC;
+}
