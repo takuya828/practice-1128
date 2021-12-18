@@ -17,5 +17,15 @@
 }
 
 body {
-  background-color: #CCFFCC;
+   background-color: #f5f2e5;
 }
+
+.test {
+  background-color: #0bd;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 40px;
+}
+
+
