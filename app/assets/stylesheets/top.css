@@ -36,5 +36,17 @@ body {
   margin: 50px;
 }
 
+.test3 {
+  border-width: thick;
+  border-style: solid;
+}
 
+.test4 {
+  border-style: solid;
+  border-color: #0bd;
+}
+
+.test5 {
+  border: dotted tomato;
+}
 
