@@ -50,3 +50,15 @@ body {
   border: dotted tomato;
 }
 
+.test6 {
+  border-bottom: 2px solid #0bd;
+}
+
+.test7 {
+  list-style-type: square;
+}
+
+.test8 {
+  list-style-type: hiragana;
+}
+
