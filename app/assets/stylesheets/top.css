@@ -95,5 +95,9 @@ body {
   justify-content: space-around;
 }
 
+.container6 {
+  display: flex;
+  justify-content: space-between;
+}
 
 
