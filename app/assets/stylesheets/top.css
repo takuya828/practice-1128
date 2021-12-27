@@ -125,6 +125,16 @@ body {
   padding: 10px;
 }
 
+.container10 {
+  display: grid;
+}
+
+.item2 {
+  background: #0bd;
+  color: #fff;
+  padding: 10px;
+}
+
 
 
 
