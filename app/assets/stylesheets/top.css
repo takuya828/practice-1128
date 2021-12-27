@@ -112,7 +112,17 @@ body {
 
 .container9 {
   display: flex;
-  align-content: stretch;
+  flex-wrap: wrap;
+  align-content: space-around;
+  height: 500px;
+}
+
+.item1 {
+  background: #0bd;
+  color: #fff;
+  width: 100px;
+  margin: 100px;
+  padding: 10px;
 }
 
 
