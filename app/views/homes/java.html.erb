@@ -71,7 +71,28 @@
 <p class="title2">変数について</p>
 <p class="text">変数・・・データ（値）を格納するために準備する名前付きの箱。
 変数の役割・・・格納したデータを取り出して使用すること。使用することで複雑なデータや複数のデータを簡単に取り出すこともできる。</p>
-<p class="text">変数の宣言・・・型　変数名;</p>
+<p class="text">変数の宣言・・・型　変数名;
+<br>初期化・・・宣言した変数に初期値を代入すること。型　変数名 = 代入するデータ;
+<br>
+public class Variable01 {
+<br>
+<br>    public static void main(String[] args) {
+<br>        int num1;  // int型の変数num1を宣言
+<br>        String str1;  // String型の変数str1を宣言
+<br>        num1 = 10;  // num1を初期化
+<br>        str1 = "Hello World!";  //str1を初期化
+<br>        System.out.println(num1);
+<br>        System.out.println(str1);
+<br>
+<br>        num1 = 20;  // num1に20を再代入
+<br>        System.out.println(num1);
+<br>
+<br>        int num2 = 30;  // int型の変数num2を宣言と同時に初期化
+<br>        System.out.println(num2);
+<br>    }
+}</p>
+<p class="text">定数・・・最初に代入した値を後から変更ができない変数のこと。
+<br>定数の基本構文・・・final 定数の型 定数名 = 初期値;</p>
 
   </body>
 </html>
