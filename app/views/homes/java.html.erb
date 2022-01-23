@@ -109,6 +109,32 @@ public class Variable01 {
 <br>ラッパークラス・・・プリミティブ型を参照型として扱えるようにできるクラスのこと　（例）Long, Integer, Short, Byte, Double, Float Boolean, Character</p>
 <p class="text">ボクシング・・・プリミティブ型をラッパークラス型へ変換すること。逆にラッパークラス型の値からプリミティブ型への変換をアンボクシングという</p>
 <p class="text">配列・・・同じ型の複数のデータを１つの変数で扱えるようにしたもの</p>
+<p class="text">・プリミティブ型の「long」「double」「boolean」の変数に値を代入して出力
+　<br>・ラッパークラスの「Float」「Integer」「Character」の変数に値を代入して出力
+　<br>・要素数が5の「int」配列に値を代入して、インデックス番号が3の値を出力</p>
+　<p class="text">解答
+　<br>public class Chapter05 {
+	<br>public static void main(String[] args) {
+	<br>	long long1 = 1;
+	<br>			System.out.println(long1);
+	<br>	double double1 = 2;
+	<br>			System.out.println(double1);
+	<br>	boolean boolean1 = true;
+	<br>			System.out.println(boolean1);
+
+	<br>			Integer i = 100;
+	<br>			System.out.println(i);
+	<br>			Float f = 1.4142f;
+	<br>			System.out.println(f);
+	<br>			Character c = 'う';
+	<br>			System.out.println(c);
+
+	<br>			int[] array = {0, 10, 20, 30, 40 };
+	<br>			System.out.println(array[3]);
+
+<br>	}
+<br>}</p>
+
 
   </body>
 </html>
