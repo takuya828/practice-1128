@@ -218,5 +218,39 @@ c = a + b;        // c = 100200<br>
 c = "あ" + "い";   // c = あい</p>
 
 <p class="text"><strong>文字列の等価比較</strong>・・・== 演算子は文字列の比較に用いることもできる。</p>
+
+<p class="text">問題↓<br>
+　・「int」の変数「val」を「2 足す 5」を演算した結果で初期化して、値を出力<br>
+　・インクリメントした変数「val」の値を出力<br>
+　・「5」を掛けた変数「val」の値を出力<br>
+　・「boolean」の変数「bool」に「valは50と等しい」を演算した結果を代入して、値を出力<br>
+　・変数「bool」に「valは50より小さい AND valを10で割った余りが0」を演算した結果を代入して、値を出力</p>
+
+　<p class="text">解答↓<br>
+　public class Chapter06 {<br>
+　public static void main(String[] args) {<br>
+		int val = 2 + 5;<br>
+		System.out.println(val);<br>
+		val++;<br>
+		System.out.println(val);<br>
+<br>
+		val *= 5;<br>
+		System.out.println(val);<br>
+<br>
+		boolean bool = (val == 50);<br>
+		System.out.println(bool);<br>
+<br>
+		bool = (val < 50) && (val % 10 == 0);<br>
+		System.out.println(bool);<br>
+	}<br>
+}<br>
+</p>
+<p class="answer">出力結果↓<br>
+7<br>
+8<br>
+40<br>
+false<br>
+true<br>
+</p>
   </body>
 </html>
