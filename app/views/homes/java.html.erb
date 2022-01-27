@@ -254,11 +254,11 @@ true<br>
 </p>
 
 <p class="title2"><strong>条件分岐</strong>について</p>
-<p class="text">if文・・・指定した条件により処理を分岐する制御文<br>
+<p class="text"><strong>if文</strong>・・・指定した条件により処理を分岐する制御文<br>
 if (条件式) {   <br>
     ブロック(処理文);<br>
 }  </p>
-<p class="text">else if・・・複数の条件を指定して処理を分岐させるための制御文<br>
+<p class="text"><strong>else if</strong>・・・複数の条件を指定して処理を分岐させるための制御文<br>
 else・・・全てのif文、else-if文の条件を満たさない場合に処理を実行するための制御文<br>
 if (条件式) {<br>
     ブロック(処理文);<br>
@@ -270,7 +270,10 @@ if (条件式) {<br>
     ブロック(処理文)<br>
 }<br>
 </p>
-<p class="text">switch文・・・変数の値を条件にして処理を分岐する制御文<br>
+<p class="text"><strong>switch文</strong>・・・変数の値を条件にして処理を分岐する制御文<br>
+<strong>case文</strong>・・・変数とcaseの値が一致する場合、ブロック内の処理を実行<br>
+<strong>break文</strong>・・・break文が処理されると、それ以降のcase文は評価されずに、switch文の分岐処理を終了する<br>
+<strong>default文</strong>・・・全てcase文の値と一致しない場合、default内のブロックの処理が実行される。default文は必須ではない。「caseに一致しなければ何もしない」という処理を実現したい場合は書かなくてよい。<br><br>
 switch (式（変数や値）){<br>
 case 値:<br>
     ブロック(処理);<br>
