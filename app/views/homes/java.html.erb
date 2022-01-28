@@ -285,6 +285,30 @@ default:<br>
     ブロック(処理);<br>
 }<br>
 </p>
+<br><br>
+<p class="text">【問題】距離を表すint型の変数を定義し、任意の値で初期化する<br>
+距離が5km以下の場合は "とても近いです" を出力する<br>
+距離が5kmより長く10km以下の場合は "近いです" を出力する<br>
+距離が10kmより長く15km以下の場合は "遠いです" を出力する<br>
+距離が15kmより長い場合は "とても遠いです" を出力する<br></p>
+<p class="text">【解答】↓<br>
+    public class Chapter07 {<br>
+	public static void main(String[] args) {<br>
+		int distanse = 20;<br>
+		if (distanse <= 5) {<br>
+			System.out.println("とても近いです");<br>
+		} else if (distanse <= 10) {<br>
+			System.out.println("近いです");<br>
+		} else if (distanse <= 15) {<br>
+			System.out.println("遠いです");<br>
+		} else {<br>
+			System.out.println("とても遠いです");<br>
+		}<br>
+	}<br>
+
+}<br>
+
+</p>
 
   </body>
 </html>
