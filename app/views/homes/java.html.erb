@@ -24,12 +24,12 @@
 
     <p class="title2">Eclipseでプログラムの実行</p>
     <p class="text">プロジェクトの作成（Javaのアプリケーションを作成するときの単位）
-    <br>ソースファイルの作成
-    <br>public class Ready02 {
-    <br>public static void main(String[] args) {
-    <br>    System.out.println("Hello World!");
-<br>    }
-<br>}
+ソースファイルの作成<br>
+public class Ready02 {<br>
+　public static void main(String[] args) {<br>
+　System.out.println("Hello World!");<br>
+　}<br>
+}<br>
 <br>
 これでHello World!が表示される。
 <br>""の間に入れる単語が表示されるところ</p>
@@ -386,6 +386,51 @@ DoWhile01 = 64<br>
 <p class="text"><strong>While文とdo-While文の違い</strong>・・・while文とdo-while文の違いは、条件式をブロックの実行前に評価するか、後に評価するかの違い。ループ開始時点で、条件が「false」の場合、while文ではブロックが実行されませんが、do-while文ではブロックが実行される。<br>
 サンプルプログラムの「While01.java」と「DoWhile01.java」で、変数の初期化を「int number = 100;」に変更して実行すると違いがわかる。<br>
 「While01.java」ではブロックが実行されないため何も表示されませんが、「DoWhile01.java」ではブロックが１回実行されて「number = 200」が表示される。</p>
-
+<br><br>
+<p class="text"><strong>for文</strong>・・・while文と同じように指定の条件が「true」の間、繰り返し処理を行なう制御文。主に指定した回数分ループして処理を行いたいときに使用する。</p>
+<p class="text">↓サンプルプログラム↓<br>
+public class For01 {<br>
+　public static void main(String[] args) {<br>
+　　// for文：<br>
+　　// 初期化式：numberを1で初期化<br>
+　　// 条件式：numberが5未満の場合、ブロックの処理を行う<br>
+　　// 変化式：ブロックの処理後に、numberをインクリメント<br>
+　　for (int number = 1; number <= 5; number++) {<br>
+　　　// ブロック：numberを出力<br>
+　　　System.out.println("For01 = " + number);<br>
+　　}<br>
+　}<br>
+}<br>
+</p>
+<p class="answer">↓出力結果↓<br>
+For01 = 1<br>
+For01 = 2<br>
+For01 = 3<br>
+For01 = 4<br>
+For01 = 5<br>
+</p>
+<br>
+<p class="text"><strong>拡張for文</strong>・・・配列やコレクションの全要素に対して、繰り返し処理を行なう制御文。<br>
+配列やコレクションの変数の要素を順番に取得し、指定した型の変数に代入しながらブロック内の処理を行う。<br>
+拡張for文は、条件式と変化式を記述しないため、通常のfor文に比べ、プログラムを簡潔に記述できる。</p>
+<p class="text">↓サンプルプログラム↓<br>
+public class For02 {<br>
+　public static void main(String[] args) {<br>
+　　int[] array = { 1, 2, 3, 4, 5 };<br>
+　　// 拡張for文：<br>
+　　// 配列の要素を順番にnumberに代入し、要素分繰り返す<br>
+　　for (int number : array) {<br>
+　　　// ブロック：numberを出力<br>
+　　　System.out.println("For02 = " + number);<br>
+　　}<br>
+　}<br>
+}<br>
+</p>
+<p class="answer">↓出力結果↓<br>
+For02 = 1<br>
+For02 = 2<br>
+For02 = 3<br>
+For02 = 4<br>
+For02 = 5</p>
   </body>
 </html>
