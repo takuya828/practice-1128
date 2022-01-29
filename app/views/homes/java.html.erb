@@ -332,8 +332,27 @@ public class Chapter07 {<br>
 　　}<br>
 　}<br>
 }<br>
-
 </p>
+
+<p class="title2">繰り返し文について</p>
+<p class="text"><strong>While文</strong>・・・指定の条件が「true」の間、繰り返し処理を行なう制御文</p>
+<p class="text">↓サンプルプログラム↓<br>
+public class While01 {<br>
+    public static void main(String[] args) {<br>
+        int number = 1;<br>
+        // while文：ループ開始<br>
+        // numberが50未満の場合、ブロックの処理を行なう<br>
+        while (number < 50) {<br>
+            // ブロック：<br>
+            // numberにnumber * 2 を代入して、numberを出力<br>
+            number *= 2;<br>
+            System.out.println("While01 = " + number);<br>
+        }<br>
+    }<br>
+}</p>
+<p class="text"><strong>do-While文</strong>・・・while文と同じように指定の条件が「true」の間、繰り返し処理を行なう制御文。while文との記述上の違いは条件式の位置</p>
+<p class="text"><strong>While文とdo-While文の違い</strong>・・・while文とdo-while文の違いは、条件式をブロックの実行前に評価するか、後に評価するかの違い。ループ開始時点で、条件が「false」の場合、while文ではブロックが実行されませんが、do-while文ではブロックが実行される。<br>
+サンプルプログラムの「While01.java」と「DoWhile01.java」で、変数の初期化を「int number = 100;」に変更して実行すると違いがわかる。「While01.java」ではブロックが実行されないため何も表示されませんが、「DoWhile01.java」ではブロックが１回実行されて「number = 200」が表示される。</p>
 
   </body>
 </html>
