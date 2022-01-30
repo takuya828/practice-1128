@@ -432,5 +432,24 @@ For02 = 2<br>
 For02 = 3<br>
 For02 = 4<br>
 For02 = 5</p>
+<br><br>
+<p class="text"><strong>break文</strong>・・・switch文のbreak文と同じで、ループ処理の途中でループ処理を終了させたい場合に使用する制御文</p>
+<p class="text">↓サンプルプログラム↓<br>
+public class Break01 {<br>
+　public static void main(String[] args) {<br>
+　　for (int count = 0; count < 5; count++) {<br>
+　　　if (count == 2) {<br>
+　　　　// countが2の場合、for文を終了<br>
+　　　　break;<br>
+　　　}<br>
+　　　System.out.println("Break01 = " + count);<br>
+　　}<br>
+　}<br>
+}</p>
+<p class="answer">↓出力結果↓<br>
+Break01 = 0<br>
+Break01 = 1<br>
+</p>
+
   </body>
 </html>
