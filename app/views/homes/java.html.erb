@@ -452,6 +452,25 @@ Break01 = 1<br>
 </p>
 <br><br>
 <p class="text"><strong>continue文</strong>・・・ループ処理の途中でその後の処理をスキップして、ループ処理の最初から実行させたい場合に使用する制御文</p>
-
-  </body>
+<p class="text">↓サンプルプログラム↓<br>
+public class Continue01 {<br>
+　public static void main(String[] args) {<br>
+　　for (int count = 0; count < 5; count++) {<br>
+　　　if (count == 2) {<br>
+　　　　// countが2の場合、この後の処理をスキップ<br>
+　　　　continue;<br>
+　　　}<br>
+　　　System.out.println("Continue01 = " + count);<br>
+　　}<br>
+　}<br>
+}<br>
+</p>
+<p class="answer">↓出力結果↓<br>
+Continue01 = 0<br>
+Continue01 = 1<br>
+Continue01 = 3<br>
+Continue01 = 4<br>
+</p>
+<br><br>
+</body>
 </html>
