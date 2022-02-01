@@ -472,5 +472,32 @@ Continue01 = 3<br>
 Continue01 = 4<br>
 </p>
 <br><br>
+<p class="text"><strong>再帰処理</strong>・・・あるメソッドが自分自身を呼び出すことで繰り返しを実現することもできる。これを、「再帰処理」や「再帰呼び出し」と呼ぶ。</p>
+<p class="text">↓サンプルプログラム↓<br>
+public class Recursive01 {<br>
+　public static void main(String[] args) {<br>
+　int number = 1;<br>
+　printNum(number);<br>
+　}<br>
+<br>
+　public static int printNum(int number) {<br>
+　if (number < 50) {<br>
+　　number *= 2;<br>
+　　System.out.println("While01 = " + number);<br>
+　　// 条件にマッチしたら自分自身を再度呼び出す<br>
+　　　printNum(number);<br>
+　　}<br>
+　return number;<br>
+　}<br>
+}<br>
+</p>
+<p class="answer">↓出力結果↓<br>
+While01 = 2<br>
+While01 = 4<br>
+While01 = 8<br>
+While01 = 16<br>
+While01 = 32<br>
+While01 = 64<br>
+</p>
 </body>
 </html>
