@@ -15,3 +15,4 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( top.css )
 Rails.application.config.assets.precompile += %w( java.css )
+Rails.application.config.assets.precompile += %w( java2.css )
