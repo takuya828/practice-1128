@@ -499,5 +499,43 @@ While01 = 16<br>
 While01 = 32<br>
 While01 = 64<br>
 </p>
+<br><br>
+<p class="text">練習問題↓
+「Chapter08.java」に以下のプログラムを作成してください。<br>
+　1.「while」文<br>
+　・1以上5未満の数の2乗を出力<br>
+　2. 通常「for」文<br>
+　・要素数が4の「int」配列を初期化<br>
+　・配列のサイズ分ループして、要素を出力<br>
+　　※ 配列のサイズは「変数名.length」で取得が可能<br>
+　3. 拡張「for」文<br>
+　・「2.」の配列をループ<br>
+　・要素の値が偶数の場合は、continue文で処理をスキップ、奇数の場合は出力<br>
+　</p>
+　
+<p class="answer">↓解答↓<br>
+public class Chapter08 {<br>
+　public static void main(String[] args) {<br>
+　　// 1.「while」文<br>
+　　int num = 1;<br>
+　　while (num < 5) {<br>
+　　　System.out.println(num * num);<br>
+　　　num++;<br>
+　　}<br>
+　　// 2. 通常「for」文<br>
+　　int array[] = { 1, 4, 14, 25 };<br>
+　　for (int i = 0; i < array.length; i++) {<br>
+　　　System.out.println(array[i]);<br>
+　　}<br>
+　　// 3. 拡張「for」文<br>
+　　for (int val : array) {<br>
+　　　if (val % 2 == 0) {<br>
+　　　　continue;<br>
+　　　}<br>
+　　　System.out.println(val);<br>
+　　}<br>
+　}<br>
+}<br>
+</p>
 </body>
 </html>
