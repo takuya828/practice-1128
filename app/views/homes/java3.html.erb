@@ -10,7 +10,7 @@
     <p class="java-link"><%= link_to "Java学習②", java2_path %></p>
     
     <p class="title">Javaプログラムコード集</p>
-    <p class="title2">問題①　「こんにちは！」という文字列を出力してください。</p>
+    <p class="question">問題①　「こんにちは！」という文字列を出力してください。</p>
     <p class="java-code">
         <pre>
 public class Test {
@@ -24,5 +24,47 @@ public class Test {
 <p class="answer">↓出力結果↓<br>
 こんにちは！
     </p>
+    
+<p class="question">問題②　Hello WEBCAMP!　改行　Hello Java!を出力してください。</p>
+<p class="java-code">
+    <pre>
+public class Test02 {
+	public static void main(String[] args) {
+		System.out.println("Hello WEBCAMP!");
+		System.out.println("Hello Java!");
+	}
+}
+    </pre>
+</p>
+<p class="answer">↓出力結果↓<br>
+Hello WEBCAMP!<br>
+Hello Java!<br>
+</p>
+
+<p class="question">問題③<br>
+・自分の名前を「String」型の変数に代入して出力<br>
+・好きな言葉を同じ変数に再代入して出力<br>
+・ラッキーナンバーとして「int」型で宣言した定数を出力</p>
+<p class="java-code">
+    <pre>
+public class Test03 {
+	public static void main(String[] args) {
+		String name;
+		int number;
+		name = "田中択哉";
+		System.out.println(name);
+		name = "ひたむきで真面目なやつ";
+		System.out.println(name);
+		number = 2;
+		System.out.println(number);
+	}
+}
+</pre>
+</p>
+<p class="answer">↓出力結果↓<br>
+田中択哉<br>
+ひたむきで真面目なやつ<br>
+2<br>
+</p>
     
 </body>
