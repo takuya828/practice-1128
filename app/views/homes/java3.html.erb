@@ -66,5 +66,43 @@ public class Test03 {
 ひたむきで真面目なやつ<br>
 2<br>
 </p>
+
+<p class="question">問題④<br>
+・プリミティブ型の「long」「double」「boolean」の変数に値を代入して出力<br>
+・ラッパークラスの「Float」「Integer」「Character」の変数に値を代入して出力<br>
+・要素数が5の「int」配列に値を代入して、インデックス番号が3の値を出力</p>
+<p class="java-code">
+    <pre>
+        public class Test04 {
+	        public static void main(String[] args) {
+		        long number = 100;
+		        double syousuu = 0.5;
+		        boolean boo = true;
+		        System.out.println(number);
+		        System.out.println(syousuu);
+		        System.out.println(boo);
+		        Float hudou = 0.5f;
+		        Integer seisuu = 64;
+		        Character char1 = 'あ';
+		        System.out.println(hudou);
+		        System.out.println(char1);
+		        System.out.println(seisuu);
+		        int[] array = { 1, 2, 3, 4, 5 };
+		        System.out.println(array[2]);
+	}
+
+}
+    </pre>
+</p>
+
+<p class="answer">↓出力結果↓<br>
+100<br>
+0.5<br>
+true<br>
+0.5<br>
+あ<br>
+64<br>
+3<br>
+</p>
     
 </body>
