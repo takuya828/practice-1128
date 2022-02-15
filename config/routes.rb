@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get '/java' => 'homes#java', as: 'java'
   get '/java2' => 'homes#java2', as: 'java2'
   get '/java3' => 'homes#java3', as: 'java3'
+  get '/php' => 'homes#php', as: 'php'
 
 end
