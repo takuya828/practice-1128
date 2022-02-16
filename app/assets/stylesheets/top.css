@@ -18,6 +18,8 @@
 .inside {
   text-align: left;
   padding: 0px;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .heading {
