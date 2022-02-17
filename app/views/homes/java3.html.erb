@@ -138,6 +138,36 @@ true<br>
 false<br>
 true<br>
 </p>
+
+<p class="question">問題⑥<br>
+距離を表すint型の変数を定義し、任意の値で初期化する<br>
+距離が5km以下の場合は "とても近いです" を出力する<br>
+距離が5kmより長く10km以下の場合は "近いです" を出力する<br>
+距離が10kmより長く15km以下の場合は "遠いです" を出力する<br>
+距離が15kmより長い場合は "とても遠いです" を出力する<br>
+</p>
+<p class="java-code">
+	<pre>
+public class Test06 {
+	public static void main(String[] args) {
+		int kyori;
+		kyori = 20;
+		if (kyori <= 5) {
+			System.out.println("とても近いです");
+		} else if (kyori <= 10) {
+			System.out.println("近いです");
+		} else if (kyori <= 15) {
+			System.out.println("遠いです");
+		} else {
+			System.out.println("とても遠いです");
+		}
+	}
+}
+</pre>
+</p>
+<p class="answer">↓出力結果↓<br>
+とても遠いです
+</p>
     
     
 </body>
