@@ -269,43 +269,145 @@ HTMLの練習
 
 
 <p class="futoji">太字になっている</p>
-<p class="text">↓ソースコード↓
+<p class="text">↓ソースコード(CSS)↓
 <pre class="inside"><code>
-&lt;p class=&quot;futoji&quot;&gt;太字になっている&lt;/p&gt;
+.futoji {
+  font-weight: bold;
+}
 </code>
 </pre>
 </p>
 
 
 <p class="color">背景色が付いている</p>
+<p class="text">↓ソースコード(CSS)↓
+<pre class="inside"><code>
+.color {
+  background-color: #faa;
+}
+</code>
+</pre>
+</p>
 
 <p class="test">この文字の背景はどう変わっているのか</p>
+<p class="text">↓ソースコード(CSS)↓
+<pre class="inside"><code>
+.test {
+  background-color: #0bd;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 40px;
+}
+
+</code>
+</pre>
+</p>
 
 <div>
 <p class="test2">要素の端とテキストの間に余白をつけます</p>
 </div>
+<p class="text">↓ソースコード(CSS)↓
+<pre class="inside"><code>
+.test2 {
+  text-align: center;
+  background-color: #0bd;
+  padding: 50px;
+  width: 500px;
+  margin: 50px;
+}
+
+</code>
+</pre>
+</p>
+
 
 <p class="test3">線を引いてます</p>
+<p class="text">↓ソースコード(CSS)↓
+<pre class="inside"><code>
+.test3 {
+  border-width: thick;
+  border-style: solid;
+}
+</code>
+</pre>
+</p>
+
 
 <p class="test4">色付きの線を引いてます</p>
+<p class="text">↓ソースコード(CSS)↓
+<pre class="inside"><code>
+.test4 {
+  border-style: solid;
+  border-color: #0bd;
+}
+</code>
+</pre>
+</p>
+
+
 
 <p class="test5">点線の線を引いてます</p>
+<p class="text">↓ソースコード(CSS)↓
+<pre class="inside"><code>
+.test5 {
+  border: dotted tomato;
+}
+</code>
+</pre>
+</p>
+
 
 <p class="test6">下の線だけ引いてます</p>
+<p class="text">↓ソースコード(CSS)↓
+<pre class="inside"><code>
+.test6 {
+  border-bottom: 2px solid #0bd;
+}
+</code>
+</pre>
+</p>
 
 <ul class="test7">
     <li>HTMLの基礎</li>
     <li>CSSの基礎</li>
     <li>デザインの基礎</li>
 </ul>
+<p class="text">↓ソースコード(CSS)↓
+<pre class="inside"><code>
+.test7 {
+  list-style-type: square;
+}
+</code>
+</pre>
+</p>
+
 
 <ol class="test8">
     <li>HTMLの基礎</li>
     <li>CSSの基礎</li>
     <li>デザインの基礎</li>
 </ol>
+<p class="text">↓ソースコード(CSS)↓
+<pre class="inside"><code>
+.test8 {
+  list-style-type: hiragana;
+}
+</code>
+</pre>
+</p>
+
 
 <p class="test9">文字の間隔を指定</p>
+<p class="text">↓ソースコード(CSS)↓
+<pre class="inside"><code>
+.test9 {
+  letter-spacing: 20px;
+}
+</code>
+</pre>
+</p>
+
 <br><br>
 <p>↓レイアウトFlexbox↓</p>
 
@@ -315,6 +417,28 @@ HTMLの練習
     <div class="item">Item 3</div>
     <div class="item">Item 4</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 4&lt;/div&gt;
+&lt;/div&gt;
+.container {
+  display: flex;
+}
+.item {
+  background: #0bd;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+}
+</code>
+</pre>
+</p>
+
+
 
 <div class="container2">
     <div class="item">Item 1</div>
@@ -322,6 +446,29 @@ HTMLの練習
     <div class="item">Item 3</div>
     <div class="item">Item 4</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container2&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 4&lt;/div&gt;
+&lt;/div&gt;
+.container2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.item {
+  background: #0bd;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+}
+</code>
+</pre>
+</p>
+
 
 <div class="container3">
     <div class="item">Item 1</div>
@@ -333,6 +480,26 @@ HTMLの練習
     <div class="item">Item 7</div>
     <div class="item">Item 8</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container3&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 4&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 5&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 6&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 7&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 8&lt;/div&gt;
+&lt;/div&gt;
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+</code>
+</pre>
+</p>
 
 <div class="container4">
     <div class="item">Item 1</div>
@@ -340,6 +507,21 @@ HTMLの練習
     <div class="item">Item 3</div>
     <div class="item">Item 4</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container4&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 4&lt;/div&gt;
+&lt;/div&gt;
+.container4 {
+  display: flex;
+  flex-direction: column;
+}
+</code>
+</pre>
+</p>
 
 <div class="container5">
     <div class="item">Item 1</div>
@@ -347,6 +529,21 @@ HTMLの練習
     <div class="item">Item 3</div>
     <div class="item">Item 4</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container5&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 4&lt;/div&gt;
+&lt;/div&gt;
+.container5 {
+  display: flex;
+  justify-content: space-around;
+}
+</code>
+</pre>
+</p>
 
 <div class="container6">
     <div class="item">Item 1</div>
@@ -354,6 +551,21 @@ HTMLの練習
     <div class="item">Item 3</div>
     <div class="item">Item 4</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container6&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 4&lt;/div&gt;
+&lt;/div&gt;
+.container6 {
+  display: flex;
+  justify-content: space-between;
+}
+</code>
+</pre>
+</p>
 
 <div class="container7">
     <div class="item">Item 1</div>
@@ -361,6 +573,21 @@ HTMLの練習
     <div class="item">Item 3</div>
     <div class="item">Item 4</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container7&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 4&lt;/div&gt;
+&lt;/div&gt;
+.container7 {
+  display: flex;
+  align-items: flex-start;
+}
+</code>
+</pre>
+</p>
 
 <div class="container8">
     <div class="item">Item 1</div>
@@ -368,6 +595,22 @@ HTMLの練習
     <div class="item">Item 3</div>
     <div class="item">Item 4</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container8&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 4&lt;/div&gt;
+&lt;/div&gt;
+.container8 {
+  display: flex;
+  align-items: stretch;
+}
+</code>
+</pre>
+</p>
+
 <br>
 
 <div class="container9">
@@ -380,6 +623,28 @@ HTMLの練習
     <div class="item1">Item 7</div>
     <div class="item1">Item 8</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container9&quot;&gt;
+    &lt;div class=&quot;item1&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item1&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item1&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item1&quot;&gt;Item 4&lt;/div&gt;
+    &lt;div class=&quot;item1&quot;&gt;Item 5&lt;/div&gt;
+    &lt;div class=&quot;item1&quot;&gt;Item 6&lt;/div&gt;
+    &lt;div class=&quot;item1&quot;&gt;Item 7&lt;/div&gt;
+    &lt;div class=&quot;item1&quot;&gt;Item 8&lt;/div&gt;
+&lt;/div&gt;
+.container9 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  height: 500px;
+}
+</code>
+</pre>
+</p>
+
 <br>
 
 <div class="container10">
@@ -388,6 +653,21 @@ HTMLの練習
     <div class="item2">Item 3</div>
     <div class="item2">Item 4</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container10&quot;&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 4&lt;/div&gt;
+&lt;/div&gt;
+.container10 {
+  display: grid;
+}
+</code>
+</pre>
+</p>
+
 <br>
 
 <div class="container11">
@@ -398,6 +678,29 @@ HTMLの練習
     <div class="item2">Item 5</div>
     <div class="item2">Item 6</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container11&quot;&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 4&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 5&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 6&lt;/div&gt;
+&lt;/div&gt;
+.container11 {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+}
+.item2 {
+  background: #0bd;
+  color: #fff;
+  padding: 10px;
+}
+</code>
+</pre>
+</p>
+
 
 <br>
 <div class="container12">
@@ -408,6 +711,25 @@ HTMLの練習
     <div class="item2">Item 5</div>
     <div class="item2">Item 6</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container12&quot;&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 4&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 5&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 6&lt;/div&gt;
+&lt;/div&gt;
+.container12 {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 10px;
+}
+</code>
+</pre>
+</p>
+
 
 <br>
 <div class="container13">
@@ -418,6 +740,26 @@ HTMLの練習
     <div class="item">Item 5</div>
     <div class="item">Item 6</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container13&quot;&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 4&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 5&lt;/div&gt;
+    &lt;div class=&quot;item&quot;&gt;Item 6&lt;/div&gt;
+&lt;/div&gt;
+.container13 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+</code>
+</pre>
+</p>
+
 
 <br>
 <div class="container14">
@@ -428,9 +770,39 @@ HTMLの練習
     <div class="item2">Item 5</div>
     <div class="item2">Item 6</div>
 </div>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+&lt;div class=&quot;container14&quot;&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 1&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 2&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 3&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 4&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 5&lt;/div&gt;
+    &lt;div class=&quot;item2&quot;&gt;Item 6&lt;/div&gt;
+&lt;/div&gt;
+.container14 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-rows: 200px 200px;
+}
+</code>
+</pre>
+</p>
+
+
 <br>
 
 <p class="test9">文字の間隔を指定</p>
+<p class="text">↓ソースコード(HTML&CSS)↓
+<pre class="inside"><code>
+.test9 {
+  letter-spacing: 20px;
+}
+
+</code>
+</pre>
+</p>
 
 </body>
 </html>
