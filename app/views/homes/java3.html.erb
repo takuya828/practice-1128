@@ -217,5 +217,29 @@ public class Test07 {
 3<br>
 4<br>
 　　</p>
+　　
+　　<p class="question">問題⑨<br>
+　　　3. 拡張「for」文<br>
+　・「2.」の配列をループ<br>
+　・要素の値が偶数の場合は、continue文で処理をスキップ、奇数の場合は出力</p>
+　<p class="java-code">
+　	<pre>
+　		public class Test09 {
+	public static void main(String[] args) {
+		int array[] = {1, 2, 3, 4};
+		for (int val : array) {
+			if (val % 2 == 0) {
+				continue;
+			}
+			System.out.println(val);
+		}
+	}
+}
+　	</pre>
+　</p>
+　<p class="answer">↓出力結果↓<br>
+　1<br>
+　3<br>
+　</p>
     
 </body>
