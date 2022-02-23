@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-        <%= stylesheet_link_tag "top", :media => "all" %>
+        <%= stylesheet_link_tag "java4", :media => "all" %>
     </head>
 
     <body>
@@ -19,5 +19,39 @@
     
     <p class="title2">内部クラスについて</p>
     <p class="text">内部クラスとは、その名のとおり、クラスの中にあるクラスのこと<br>
-    クラスは通常、1ファイルの中に1つだけ定義することが多いが言語仕様上は、1ファイルの中に複数のクラスを持つことができる。</p>
+    クラスは通常、1ファイルの中に1つだけ定義することが多いが言語仕様上は、1ファイルの中に複数のクラスを持つことができる。<br>
+    その中で、クラスの中に定義するクラスを、<strong>内部クラス</strong>と呼ぶ。クラスAの中に、内部クラスBを持つ例が以下のコード</p>
+<p class="java-code">
+    <pre>
+public class A {
+    public class B {
+    }
+}
+</pre>
+</p>
+    
+    <p class="text">内部クラスBの中に、さらに内部クラスCを持つ例が以下のコード。</p>
+    <p class="java-code">
+        <pre>
+public class A {
+    public class B {
+        public class C {
+        }
+    }
+}
+        </pre>
+    </p>
+<p class="text">内部クラスではなくても、1ファイルに複数のクラスを持つこともできる。この場合は内部クラスではない。</p>
+<p class="java-code">
+    <pre>
+public class A {
+}
+
+class B {
+
+}
+    </pre>
+</p>
+
+</body>
     
