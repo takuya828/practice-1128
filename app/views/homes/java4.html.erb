@@ -48,9 +48,41 @@ public class A {
 }
 
 class B {
-
 }
     </pre>
+</p>
+
+<p class="title2">内部クラスの使い方</p>
+<p class="text">内部クラスもクラスと同じようにインスタンス化できますが、以下のような制限がある<br>
+・staticクラスは、クラス外から直接インスタンス化できる<br>
+・非staticクラスは、外部クラスのインスタンスからのみインスタンス化できる<br>
+なお、非staticな場合のみ内部クラスと呼び、それ以外は<strong>「ネストしたクラス」</strong>として扱う場合もあります。
+</p>
+<p class"text">
+    <pre>
+package inner_class_sample;
+public class Outer {
+    public class Inner {
+    }
+}    
+</pre>
+</p>
+<p class="text">このクラスA、Bを、別のクラスCからインスタンス化してみる</p>
+<div class="java-code">
+<p class="text">
+    <pre>
+public class Example {
+    public static void main(String[] args) {
+        Outer outer = new Outer(); // クラスOuterをインスタンス化
+        Outer.Inner inner = outer.new Inner(); // クラスOuterの内部クラスInnerをインスタンス化
+    }
+}
+
+    </pre>
+</p>
+</div>
+
+    
 </p>
 
 </body>
