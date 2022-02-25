@@ -21,6 +21,7 @@
     <p class="text">内部クラスとは、その名のとおり、クラスの中にあるクラスのこと<br>
     クラスは通常、1ファイルの中に1つだけ定義することが多いが言語仕様上は、1ファイルの中に複数のクラスを持つことができる。<br>
     その中で、クラスの中に定義するクラスを、<strong>内部クラス</strong>と呼ぶ。クラスAの中に、内部クラスBを持つ例が以下のコード</p>
+    <div class="java-code">
 <p class="java-code">
     <pre>
 public class A {
@@ -29,8 +30,10 @@ public class A {
 }
 </pre>
 </p>
+</div>
     
     <p class="text">内部クラスBの中に、さらに内部クラスCを持つ例が以下のコード。</p>
+<div class="java-code">
     <p class="java-code">
         <pre>
 public class A {
@@ -41,7 +44,9 @@ public class A {
 }
         </pre>
     </p>
+    </div>
 <p class="text">内部クラスではなくても、1ファイルに複数のクラスを持つこともできる。この場合は内部クラスではない。</p>
+<div class="java-code">
 <p class="java-code">
     <pre>
 public class A {
@@ -51,6 +56,7 @@ class B {
 }
     </pre>
 </p>
+</div>
 
 <p class="title2">内部クラスの使い方</p>
 <p class="text">内部クラスもクラスと同じようにインスタンス化できますが、以下のような制限がある<br>
@@ -58,6 +64,7 @@ class B {
 ・非staticクラスは、外部クラスのインスタンスからのみインスタンス化できる<br>
 なお、非staticな場合のみ内部クラスと呼び、それ以外は<strong>「ネストしたクラス」</strong>として扱う場合もあります。
 </p>
+<div class="java-code">
 <p class"text">
     <pre>
 package inner_class_sample;
@@ -67,6 +74,7 @@ public class Outer {
 }    
 </pre>
 </p>
+</div>
 <p class="text">このクラスA、Bを、別のクラスCからインスタンス化してみる</p>
 <div class="java-code">
 <p class="text">
@@ -77,10 +85,44 @@ public class Example {
         Outer.Inner inner = outer.new Inner(); // クラスOuterの内部クラスInnerをインスタンス化
     }
 }
-
     </pre>
 </p>
 </div>
+<p class="text">
+    クラスOuterは外部クラスですので、 Outer outer = new Outer(); でインスタンス化できますが、
+クラスInnerは、非staticな内部クラスですので、インスタンス化するときは、 outer.new Inner() のように、<br>
+外部クラスAのインスタンス outerを使ってインスタンスを作る必要があります。
+また、クラスを直接参照することができないため、型として用いる際は Outer.Inner と外部クラス名とともに指定するか、<br>
+import inner_class_sample.Outer.Inner; といったimport文を書かなくてはなりません。<br><br><br><br>
+</p>
+
+<p class="text">staticな内部クラスBの例</p>
+<div class="java-code">
+    <p>
+        <pre>
+package inner_class_sample;
+
+public class Outer {
+    public static class Inner {
+    }
+}
+        </pre>
+    </p>
+</div>
+<p class="text">このクラスA、Bを、別のクラスCからインスタンス化してみる</p>
+<div class="java-code">
+    <p>
+        <pre>
+public class Example {
+    public static void main(String[] args) {
+        Outer outer = new Outer(); // クラスOuterをインスタンス化
+        Outer.Inner inner = new Outer.Inner(); // クラスOuterの内部クラスInnerをインスタンス化
+    }
+}
+        </pre>
+    </p>
+</div>
+
 
     
 </p>
