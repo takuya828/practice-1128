@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <%= stylesheet_link_tag "java_biginner", :media => "all" %>
+    </head>
+
+    <body>
+ <header>
+      </header>
+            <div class="text-center">
+    <p class="html-link"><%= link_to "HTML CSS学習", root_path %></p>
+    <p class="java-link"><%= link_to "Java学習①", java_path %></p>
+    <p class="java-link"><%= link_to "Java学習②", java2_path %></p>
+    <p class="java-link"><%= link_to "Java学習③", java4_path %></p>
+    <p class="java-link"><%= link_to "Javaプログラムコード集", java3_path %></p>
+    <p class="java-link"><%= link_to "PHP", php_path %></p>
+    </div>
+    
+      <p class="title2">サンプルプログラムを動かしてみよう</p>
+      <p class="java-code">
+          <pre>
+public class biginner01 {
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+	}
+}
+          </pre>
+      </p>
+    <p class="answer">
+        出力結果↓<br>
+        Hello World
+    </p>  
+      
+      </body>

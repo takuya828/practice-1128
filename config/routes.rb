@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   get '/java3' => 'homes#java3', as: 'java3'
   get '/php' => 'homes#php', as: 'php'
   get '/java4' => 'homes#java4', as: 'java4'
-  
+  get '/javabiginner' => 'homes#Javabiginner', as: 'javabiginner'
 
 end
