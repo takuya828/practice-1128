@@ -14,6 +14,7 @@
     <p class="java-link"><%= link_to "Java学習②", java2_path %></p>
     <p class="java-link"><%= link_to "Javaプログラムコード集", java3_path %></p>
     <p class="java-link"><%= link_to "PHP", php_path %></p>
+    </div>
     
     <p class="title">Java学習記録③</p>
     
@@ -183,6 +184,59 @@ public class Outer {
         </pre>
     </p>
 </div>
+
+<p class="title2">内部クラスを使うケース</p>
+<p class="text">
+    内部クラスを用いると、1ファイル=1クラスの原則から外れてしまうので、クラスファイルの一覧を眺めただけでは<br>
+    一見その内部クラスがどのファイルにあるのか分かりづらくなる。
+<br><br>
+内部クラスを利用する際は、デメリットよりメリットのほうが大きい場合に限ったほうがよいでしょう。たとえば、以下で紹介するようなケース
+</p>
+
+<p class="java-code"><strong>定数クラスを読みやすくするケース</strong>
+    <pre>
+public class Constants {
+  //内部クラスCatの中に、猫関係の定数を定義
+    public static class Cat {
+        public static final String NAME = "猫";
+        public static final int LEG_COUNT = 4;
+    }
+
+  //内部クラスOctopusの中に、タコ関係の定数を定義
+    public static class Octopus {
+        public static final String NAME = "タコ";
+        public static final int LEG_COUNT = 8;
+    }
+
+}
+    </pre>
+</p>
+<p class="java-code">以下のコードで出力できる↓<br>
+    <pre>
+System.out.println(Constants.Cat.NAME); // "猫"
+System.out.println(Constants.Cat.LEG_COUNT); // 4
+System.out.println(Constants.Octopus.NAME);  // "タコ"
+System.out.println(Constants.Octopus.LEG_COUNT);  // 8
+    </pre>
+</p>
+
+<p class="text"><strong>クラス間の関連性を強調するケース</strong></p>
+<p class="java-code">
+    <pre>
+// 猫クラス
+public class Cat {
+  // 猫の爪クラス
+  public class CatNail {
+  }
+}
+// タコクラス
+public class Tako {
+  // タコの吸盤クラス
+  public class TakoSucker {
+  }
+}
+    </pre>
+</p>
 
 
 </body>
