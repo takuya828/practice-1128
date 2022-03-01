@@ -61,5 +61,23 @@ public class biginner03 {
     <p class="answer">出力結果↓<br>
 私の年齢は20<br>
 …いや、本当の年齢は31</p>
+
+<p class="java-code"><strong>↓定数の宣言↓ <br>
+finalを使うことで書き換えを防げる</strong>
+<pre>
+public class biginner04 {
+	public static void main(String[] args) {
+		final double PI = 3.14;
+		int pie = 5;
+		System.out.println(pie * pie * PI);
+		PI = 10;
+	}
+}
+</pre></p>
+
+<p class="answer">↓出力結果↓<br>
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	final のローカル変数 PI には代入できません。
+</p>
       
       </body>
