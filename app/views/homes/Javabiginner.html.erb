@@ -165,4 +165,37 @@ public class biginner09 {
 29(自分で入力するところ)<br>
 ようこそ、29歳の田中さん
 </p><br><br>
+
+<p class="java-code"><strong>占いの館プログラミングで作成</strong><br>
+<pre>
+    public class fortunetelling {
+	public static void main(String[] args) {
+		System.out.println("ようこそ占いの館へ");
+		System.out.println("あなたの名前を入力してください。");
+		String name = new java.util.Scanner(System.in).nextLine();
+		System.out.println("あなたの年齢を入力してください。");
+		String ageString = new java.util.Scanner(System.in).nextLine();
+		int age = Integer.parseInt(ageString);
+		int fortune = new java.util.Random().nextInt(3);
+		fortune++;
+		System.out.println("占い結果が出ました！");
+		System.out.println
+		(age + "歳の" + name + "さん、あなたの運気番号は" + fortune + "です");
+		System.out.println("1:大吉 2:中吉 3:吉 4:凶");
+	}
+}
+</pre>
+</p>
+<p class="answer">出力結果↓<br>
+<pre>
+ようこそ占いの館へ
+あなたの名前を入力してください。
+田中
+あなたの年齢を入力してください。
+29
+占い結果が出ました！
+29歳の田中さん、あなたの運気番号は2です
+1:大吉 2:中吉 3:吉 4:凶
+</pre>
+</p>
       </body>
