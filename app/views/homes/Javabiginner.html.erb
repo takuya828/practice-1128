@@ -141,6 +141,28 @@ public class biginner07 {
 </p>
 <p class="answer">出力結果↓<br>
 あなたはたぶん、0(ここがランダムな数値になる)歳ですね？
+</p><br><br>
+
+<p class="java-code"><strong>キーボードから入力を受け付ける命令</strong><br>
+<pre>
+public class biginner09 {
+	public static void main(String[] args) {
+		System.out.println("あなたの名前を入力してください。");
+		String name = new java.util.Scanner(System.in).nextLine();
+		System.out.println("あなたの年齢を入力してください。");
+		int age = new java.util.Scanner(System.in).nextInt();
+		System.out.println
+			("ようこそ、" + age + "歳の" + name + "さん");
+	}
+}
+
+</pre>
 </p>
-      
+<p class="answer">出力結果↓<br>
+あなたの名前を入力してください。<br>
+田中(自分で入力するところ)<br>
+あなたの年齢を入力してください。<br>
+29(自分で入力するところ)<br>
+ようこそ、29歳の田中さん
+</p><br><br>
       </body>
