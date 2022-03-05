@@ -223,4 +223,30 @@ trueなら・・・↓<br>
 falseなら・・・↓<br>
 DVDを見ます
 </p>
+
+<p class="java-code"><strong>繰り返し処理</strong><br>
+<pre>
+public class biginner11 {
+	public static void main(String[] args) {
+		boolean doorClose = true;
+		while (doorClose == true) {
+			System.out.println("ノックする");
+			System.out.println("1分待つ");
+		}
+	}
+}
+</pre>
+</p>
+<p class="answer">出力結果↓<br>
+3行目がtrueなら・・・↓<br>
+1分待つ<br>
+ノックする<br>
+1分待つ<br>
+ノックする<br>
+1分待つ<br>
+ノックする・・・<strong>無限ループになる</strong>
+<br><br>
+3行目がfalseなら・・・↓<br>
+何も表示されない
+</p>
       </body>
