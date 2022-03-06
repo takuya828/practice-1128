@@ -222,7 +222,7 @@ trueなら・・・↓<br>
 <br><br>
 falseなら・・・↓<br>
 DVDを見ます
-</p>
+</p><br><br>
 
 <p class="java-code"><strong>繰り返し処理</strong><br>
 <pre>
@@ -248,5 +248,29 @@ public class biginner11 {
 <br><br>
 3行目がfalseなら・・・↓<br>
 何も表示されない
+</p><br><br>
+
+<p class="java-code"><strong>if-else構文</strong><br>
+<pre>
+public class biginner12 {
+	public static void main(String[] args) {
+		System.out.println("あなたの運勢を占います。");
+		int fortune = new java.util.Random().nextInt(4) + 1;
+		if (fortune == 1) {
+			System.out.println("大吉");
+		} else if (fortune == 2) {
+			System.out.println("中吉");
+		} else if (fortune == 3) {
+			System.out.println("吉");
+		} else {
+			System.out.println("凶");
+		}
+	}
+}
+</pre>
+</p>
+<p class="answer">出力結果↓<br>
+あなたの運勢を占います。<br>
+大吉(ここの部分が乱数によって表示が変わる)
 </p>
       </body>
