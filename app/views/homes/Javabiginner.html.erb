@@ -382,5 +382,43 @@ public class biginner15 {
 9 18 27 36 45 54 63 72 81
 </pre>
 </p>
+<br><br>
+
+<p class="java-code"><strong>数あてゲーム</strong><br>
+<pre>
+public class numbergame {
+	public static void main(String[] args) {
+		System.out.println("【数当てゲーム】");
+		int ans = new java.util.Random().nextInt(10);
+		for (int i = 0; i < 5; i++) {
+			System.out.println("0～9の数字を入力してください");
+			int num = new java.util.Scanner(System.in).nextInt();
+			if (ans == num) {
+				System.out.println("アタリ！");
+				break;
+			} else if (ans > num) {
+				System.out.println("答えよりも小さい！");
+			} else {
+				System.out.println("違います");
+			}
+		}
+		System.out.println("ゲームを終了します");
+	}
+}
+</pre>
+</p>
+
+<p class="answer">出力結果↓<br>
+<pre>
+	【数当てゲーム】
+0～9の数字を入力してください
+1 (自分で入力する)
+答えよりも小さい！
+4
+アタリ！
+ゲームを終了します
+</pre>
+</p>
+
 
       </body>
