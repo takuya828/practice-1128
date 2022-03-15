@@ -586,7 +586,22 @@ public class biginner20 {
 <p class="answer">出力結果↓<br>
 100<br>
 (arrayAとarrayBは同じ配列を参照している)
+</p><br><br>
 
+
+
+<p class="java-code"><strong>nullの利用(エラー)</strong><br>
+<pre>
+public class biginner22 {
+	public static void main(String[] args) {
+		int[] array = {1, 2, 3};
+		array = null;
+		array[0] = 10;
+	}
+}
+</pre>
 </p>
-
+<p class="answer">出力結果↓<br>
+nullを利用することで意図的に配列を参照されないようにすることができる。「何もない」という意味。
+</p>
       </body>
