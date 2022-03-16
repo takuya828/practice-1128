@@ -604,4 +604,26 @@ public class biginner22 {
 <p class="answer">出力結果↓<br>
 nullを利用することで意図的に配列を参照されないようにすることができる。「何もない」という意味。
 </p>
+<br><br>
+<p class="java-code"><strong>2次元配列の利用</strong><br>
+<pre>
+	public class biginner23 {
+	public static void main(String[] args) {
+		int [][] scores = new int [2][3];
+		scores[0][0] = 40;
+		scores[0][1] = 50;
+		scores[0][2] = 60;
+		scores[1][0] = 80;
+		scores[1][1] = 60;
+		scores[1][2] = 70;
+		System.out.println(scores[1][1]);
+	}
+}
+
+</pre>
+</p>
+
+<p class="answer">出力結果↓<br>
+60
+</p>
       </body>
