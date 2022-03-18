@@ -641,5 +641,33 @@ nullを利用することで意図的に配列を参照されないようにす�
 <p class="answer">出力結果↓<br>
 2<br>
 3
+</p><br><br>
+
+<p class="java-code">配列のプログラム①<br>
+3つの口座残高が格納されているint型配列moneyListを宣言。その配列の要素を1つずつfor文で取り出す。同じ配列の要素を拡張for文で１つずつ取り出す。
+<br><br>
+<pre>
+public class biginner25 {
+	public static void main(String[] args) {
+		int[] moneyList = {121902, 8302, 55100};
+		for (int i = 0; i < moneyList.length; i++) {
+			System.out.println(moneyList[i]);
+		}
+		for (int m : moneyList) {
+			System.out.println(m);
+		}
+	}
+}
+</pre>
+</p>
+<p class="answer">出力結果↓<br>
+<pre>
+121902
+8302
+55100
+121902
+8302
+55100
+</pre>
 </p>
       </body>
