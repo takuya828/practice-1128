@@ -670,4 +670,27 @@ public class biginner25 {
 55100
 </pre>
 </p>
+<br><br>
+
+<p class="java-code"><strong>数当てクイズ</strong><br>
+<pre>
+	public class biginner26 {
+	public static void main(String[] args) {
+		int[] numbers = {3, 4, 9};
+		System.out.println("1桁の数字を入力してください");
+		int input = new java.util.Scanner(System.in).nextInt();
+		for (int n : numbers) {
+			if (n == input) {
+				System.out.println("アタリ！");
+			}
+		}
+	}
+}
+</pre>
+</p>
+<p class="answer">出力結果↓<br>
+1桁の数字を入力してください<br>
+3<br>
+アタリ！
+</p>
       </body>
