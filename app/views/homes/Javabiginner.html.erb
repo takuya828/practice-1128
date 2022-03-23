@@ -724,5 +724,28 @@ public class biginner27 {
 メソッドを呼び出します<br>
 田中さん、こんにちは<br>
 メソッドの呼び出しが終わりました
+</p><br><br>
+
+<p class="java-code"><strong>mainメソッド以外からメソッドを呼び出す</strong><br>
+<pre>
+public class biginner28 {
+	public static void methodA() {
+		System.out.println("methodA");
+		methodB();
+	}
+	public static void methodB() {
+		System.out.println("methodB");
+	}
+	public static void main(String[] args) {
+		methodA();
+	}
+
+}
+</pre>
 </p>
+<p class="answer">
+methodA<br>
+methodB
+</p>
+<p class="text">処理の流れとしてはmain()→methodA()→methodB()の順に実行される。</p>
       </body>
