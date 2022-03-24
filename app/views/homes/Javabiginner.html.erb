@@ -748,4 +748,31 @@ methodA<br>
 methodB
 </p>
 <p class="text">処理の流れとしてはmain()→methodA()→methodB()の順に実行される。</p>
+<br><br>
+<p class="java-code"><strong>引数とは</strong>・・・メソッドを呼び出す際に、呼び出し元から値を渡すことができる。このときに渡される値のことを引数という。<br>
+<pre>
+public class biginner29 {
+	public static void main(String[] args) {
+		System.out.println("メソッドを呼び出します");
+		hello("奏");
+		hello("朝香");
+		hello("菅原");
+		System.out.println("メソッドの呼び出しが終わりました");
+
+	}
+	public static void hello(String name) {
+		System.out.println(name + "さん、こんにちは");
+	}
+}
+
+</pre>
+</p>
+<p class="answer">出力結果↓<br>
+メソッドを呼び出します<br>
+奏さん、こんにちは<br>
+朝香さん、こんにちは<br>
+菅原さん、こんにちは<br>
+メソッドの呼び出しが終わりました
+
+</p>
       </body>
