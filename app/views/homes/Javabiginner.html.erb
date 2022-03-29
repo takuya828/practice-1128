@@ -820,5 +820,21 @@ return 戻り値;<br>
 </p>
 <p class="answer">出力結果↓<br>
 100 + 10 = 110
+</p><br><br>
+
+<p class="java-code"><strong>戻り値をそのまま使う</strong><br>
+<pre>
+public class biginner32 {
+	public static int add(int x, int y) {
+		int ans = x + y;
+		return ans;
+	}
+	public static void main(String[] args) {
+		System.out.println(add(add(10, 20), add(30, 40)));
+	}
+}
+</pre></p>
+<p class="answer">出力結果↓<br>
+100
 </p>
       </body>
