@@ -847,4 +847,31 @@ public class biginner32 {
 </p>
 <br><br>
 <p class="text"><strong>オーバーロード</strong>・・・同じ名前のメソッドを定義すること。<strong>多重定義</strong>ともいう</p>
+<p class="java-code">例文↓<br>
+<pre>
+public class biginner33 {
+	public static int add(int x, int y) {
+		return x + y;
+	}
+
+	public static double add(double x, double y) {
+		return x + y;
+	}
+
+	public static String add(String x, String y) {
+		return x + y;
+	}
+	public static void main(String[] args) {
+		System.out.println(add(10, 20));
+		System.out.println(add(3.5, 2.7));
+		System.out.println(add("Hello", "World"));
+	}
+}
+</pre>
+</p>
+<p class="answer">出力結果↓<br>
+30<br>
+6.2<br>
+HelloWorld
+</p>
       </body>
