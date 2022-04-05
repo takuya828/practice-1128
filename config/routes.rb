@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get '/php' => 'homes#php', as: 'php'
   get '/java4' => 'homes#java4', as: 'java4'
   get '/javabiginner' => 'homes#Javabiginner', as: 'javabiginner'
+  get '/itword' => 'homes#itword', as: 'itword'
 
 end
